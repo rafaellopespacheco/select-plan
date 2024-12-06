@@ -1,0 +1,201 @@
+:root {
+   --cor1: #00b289;
+   --cor2: #4c4d5f;
+   --cor3: #f8db62;
+   --cor4: #F2FAFE;
+   --font1: Arial, Geneva, Tahoma, sans-serif; 
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: var(--font1);
+}
+
+body {
+   background-color: rgb(252, 252, 252);
+}
+
+header {
+   max-height: 100px;
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 80px;
+}
+
+header a {
+   text-decoration: none;
+   color: var(--cor2);
+   font-family: var(--font1);
+   text-align: center;
+   margin-right: 50px;
+}
+
+header .login {
+   border: 2px solid var(--cor1);
+   color: var(--cor1);
+   font-weight: bolder;
+   padding: 10px 15px;
+   border-radius: 5px;
+}
+
+header .startfree {
+   background-color: var(--cor1);
+   color: white;
+   font-weight: bolder;
+   padding: 10px 15px;
+   border-radius: 5px;
+}
+
+header img {
+   max-width: 150px;
+   display: inline-block;
+   text-align: left;
+}
+
+main {
+   max-width: 800px;
+   margin: auto;
+}
+
+article.plans-and-price {
+   display: block;
+   margin: auto;
+   justify-items: center;
+}
+
+article.plans-and-price h1 {
+   text-align: center;
+   font-weight: bold;
+   font-family: var(--font1);
+   margin-bottom: 20px;
+}
+
+article .planos {
+   font-family: var(--font1);
+   display: inline-block;
+   max-width: 400px;
+   background-color: white;
+   border-radius: 5px;
+   padding: 40px;
+   margin: 10px;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.150);
+}
+
+article .planos h2 {
+   font-family: var(--font1);
+   font-size: 1.3em;
+}
+
+article .planos strong {
+   font-size: 2.5em;
+}
+
+article .planos .vertical {
+   vertical-align: top;
+}
+
+article .planos hr {
+   border: 1.5px solid var(--cor1);
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+article .planos ul {
+   list-style-position: inside;
+   list-style-type: '✔  ';
+}
+
+article .planos li {
+   margin-bottom: 7px;
+}
+
+article .planos .startfree2 {
+   text-decoration: none;
+   font-family: var(--font1);
+   background-color: var(--cor1);
+   color: white;
+   font-weight: bolder;
+   padding: 10px;
+   border-radius: 5px;
+   margin-top: 20px;
+   display: block;
+   text-align: center;
+}
+
+article.adicional {
+   margin-top: 80px;
+}
+
+article.adicional h3 {
+   font-size: 1.3em;
+   text-align: center;
+   font-weight: bold;
+   font-family: var(--font1);
+   margin-bottom: 20px;
+}
+
+article.adicional aside {
+   background-color: white;
+   margin: 8px 40px;
+   padding: 30px;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.150);
+   border-radius: 5px;
+}
+
+article.adicional aside p, .parte1, .parte2 {
+   display: inline-block;
+}
+article.adicional .parte2 .gratis {
+   font-size: 1.5em;
+}
+
+article.adicional .parte1 {
+   width: 70%;
+}
+article.adicional .parte2 {
+   width: 29%;
+   text-align: right;
+}
+article.adicional .parte2 .valor {
+   font-size: 1.5em;
+}
+
+article.podemosajudar {
+   background-color: var(--cor4);
+   margin: 80px 40px;
+   padding: 50px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.100);
+   
+}
+article.podemosajudar h4 {
+   font-family: serif;
+   font-size: 2em;
+}
+
+article.podemosajudar strong {
+   color: var(--cor1);
+   font-family: serif;
+}
+article.podemosajudar a {
+   text-decoration: none;
+   font-family: var(--font1);
+   background-color: var(--cor1);
+   color: white;
+   font-weight: bolder;
+   padding: 10px;
+   border-radius: 5px;
+   display: block;
+   text-align: center;
+}
+
+article.podemosajudar .parte1 {
+   display: inline-block;
+   width: 70%;
+}
+article.podemosajudar .parte2 {
+   display: inline-block;
+   width: 29%;
+   
+}

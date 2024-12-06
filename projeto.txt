@@ -1,0 +1,9 @@
+COISAS QUE FALTAM IMPLEMENTAR
+
+- Header
+- Hover nos botões
+- Hover nos planos
+- Dúvidas frequentes
+- Footer
+- Responsividade
+- Menu Hamburguer
