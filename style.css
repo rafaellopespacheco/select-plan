@@ -18,9 +18,17 @@ body {
 
 header {
    max-height: 100px;
-   text-align: center;
-   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 40px;
    margin-bottom: 80px;
+}
+
+header nav {
+   flex: 1; /* Ocupará o espaço entre o logo e os botões */
+   display: flex;
+   justify-content: center; /* Centraliza os links */
 }
 
 header a {
@@ -29,6 +37,12 @@ header a {
    font-family: var(--font1);
    text-align: center;
    margin-right: 50px;
+}
+
+header .actions {
+   display: flex;
+   align-items: center; /* Alinha os botões verticalmente */
+   gap: 15px; /* Espaço entre os botões */
 }
 
 header .login {
@@ -198,4 +212,38 @@ article.podemosajudar .parte2 {
    display: inline-block;
    width: 29%;
    
+}
+
+article.fac h5 {
+   font-size: 1.3em;
+   text-align: center;
+   font-weight: bold;
+   font-family: var(--font1);
+   margin-bottom: 50px;
+}
+
+article.fac {
+   margin: 80px 40px;
+}
+
+article.fac p {
+   margin-bottom: 15px;
+   border-bottom: 1px solid #4c4d5f36;
+}
+
+footer {
+   text-align: center;
+   padding: 10px;
+   background-color: var(--cor4);
+   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.100);
+}
+
+footer a {
+   text-decoration: none;
+   color: black;
+   font-weight: bolder;
+}
+
+footer a:hover {
+   text-decoration: underline;
 }
