@@ -14,36 +14,41 @@
 
 body {
    background-color: rgb(252, 252, 252);
+   overflow-x: hidden;
 }
 
 header {
    max-height: 100px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    padding: 20px 40px;
    margin-bottom: 80px;
 }
 
 header nav {
-   flex: 1; /* Ocupará o espaço entre o logo e os botões */
    display: flex;
+   align-items: center;
    justify-content: center; /* Centraliza os links */
 }
 
+header ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+
 header a {
+   display: flex;
+   gap: 20px;
+   margin-left: 15px;
+   align-items: center;
    text-decoration: none;
    color: var(--cor2);
    font-family: var(--font1);
    text-align: center;
-   margin-right: 50px;
 }
 
-header .actions {
-   display: flex;
-   align-items: center; /* Alinha os botões verticalmente */
-   gap: 15px; /* Espaço entre os botões */
-}
 
 header .login {
    border: 2px solid var(--cor1);
@@ -59,12 +64,27 @@ header .startfree {
    font-weight: bolder;
    padding: 10px 15px;
    border-radius: 5px;
+   margin-right: 20px;
 }
 
 header img {
    max-width: 150px;
-   display: inline-block;
-   text-align: left;
+   height: 30px;
+
+}
+
+.mobile-menu {
+   cursor: pointer;
+   display: none;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background-color: black;
+   cursor: pointer;
+   margin: 8px;
+   transition: 0.3s;
 }
 
 main {
@@ -73,7 +93,6 @@ main {
 }
 
 article.plans-and-price {
-   display: block;
    margin: auto;
    justify-items: center;
 }
@@ -87,13 +106,16 @@ article.plans-and-price h1 {
 
 article .planos {
    font-family: var(--font1);
-   display: inline-block;
    max-width: 400px;
    background-color: white;
    border-radius: 5px;
    padding: 40px;
    margin: 10px;
    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.150);
+}
+
+article .planos2 {
+   display: flex;
 }
 
 article .planos h2 {
@@ -246,4 +268,75 @@ footer a {
 
 footer a:hover {
    text-decoration: underline;
+}
+
+@media (max-width: 816px) {
+   .nav-list {
+      position: absolute;
+      top: 12.5vh;
+      right: 0;
+      width: 50vh;
+      height: 92vh;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.291);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+   }
+   .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+   }
+   .nav-list li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bolder;
+      padding: 40px ;
+   
+   }
+   .nav-list li a:hover {
+      color: gray;
+      text-decoration: underline;
+   }
+
+   .nav-list .botao, .nav-list .botao:hover {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+   }
+
+   .mobile-menu {
+      display: block;
+   }
+   article .planos2 {
+   flex-direction: column;
+}
+}
+
+.mobile-menu.active .line1 {
+   transform: rotate(-45deg) translate(-8px, 8px);
+
+}
+.mobile-menu.active .line2 {
+   opacity: 0;
+}
+.mobile-menu.active .line3 {
+   transform: rotate(45deg) translate(-5px, -7px);
+}
+.nav-list.active {
+   transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+   from {
+      opacity: 0;
+      transform: translateX(50px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
 }
