@@ -85,6 +85,7 @@ header img {
    cursor: pointer;
    margin: 8px;
    transition: 0.3s;
+   margin-left: 50px;
 }
 
 main {
@@ -307,7 +308,32 @@ footer a:hover {
       padding: 10px;
       text-decoration: none;
    }
+   .nav-list .login {
+      border: 2px solid var(--cor1);
+      color: var(--cor1);
+      font-weight: bolder;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 0;
+   }
 
+   .nav-list .startfree {
+      background-color: var(--cor1);
+      color: white;
+      font-weight: bolder;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 0;
+   }
+
+   .nav-list .startfree:hover {
+      color: white;
+      text-decoration: none;
+   }
+   .nav-list .login:hover {
+      color: var(--cor1);
+      text-decoration: none;
+   }
    .mobile-menu {
       display: block;
    }
